@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Replace Me</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="game-container">
+            <div class="mystery-message" id="mystery-message">
+                Unknown voice (???): Replace me. Act like me. Don't let them know you aren't me. Or bad things will happen. Don't ask. Don't mess up--
+            </div>
+            
+            <div class="star" id="main-star"></div>
+            <div class="text-container" id="text-container">
+                <div class="shake-text">[ Insert Your Name ]</div>
+                <div class="input-container">
+                    <input type="text" id="name-input" maxlength="20">
+                    <br>
+                    <button id="enter-button">Enter</button>
+                </div>
+            </div>
+        </div>
+        <div class="room-container" id="room-container" style="display: none;">
+            <div class="mirror-scene" id="mirror-scene"></div>
+            <div class="room-scene" id="room-scene"></div>
+            <div class="kitchen-scene" id="kitchen-scene"></div>
+            <div class="school-scene" id="school-scene"></div>
+            <div class="hallway-scene" id="hallway-scene"></div>
+            <div class="hospital-scene" id="hospital-scene"></div>
+
+            <div class="red-timer" id="red-timer">45</div>
+
+            <div class="next-button" id="next-button">Next</div>
+            <div class="hospital-text" id="hospital-text-1">You have been unconscious for weeks. Why didn't you tell us anything?</div>
+            <div class="hospital-text" id="hospital-text-2">"I...am awake?"</div>
+
+            <div class="nightmare-game-container" id="nightmare-game-container">
+                <div class="nightmare-game-instructions" id="nightmare-game-instructions">Keep clicking the button as it moves!</div>
+                <button class="nightmare-game-button" id="nightmare-game-button">Click Me</button>
+                <div class="nightmare-game-progress">
+                    <div class="nightmare-game-progress-bar" id="nightmare-game-progress-bar"></div>
+                </div>
+            </div>
+
+            <div class="white-overlay" id="white-overlay"></div>
+            <div class="hospital-reveal" id="hospital-reveal"></div>
+
+            <div class="stress-meter-container" id="stress-meter-container">
+                <div class="stress-meter" id="stress-meter"></div>
+                <div class="stress-text">Stress: <span id="stress-value">0%</span></div>
+            </div>
+
+            <div class="essay-game-container" id="essay-game-container">
+                <div class="essay-game-header">College Application Essay</div>
+                <div class="essay-game-instructions">Select words to include in your essay (5-10 words):</div>
+                <div class="essay-game-text" id="essay-game-text">
+                    The admissions committee is interested in learning more about you. Please respond to one of the following prompts in 250 words or less.<br><br>
+                    <strong>Prompt:</strong> Reflect on a time when you faced academic pressure. How did it affect your mental health, and what did you learn from the experience?<br><br>
+                    <em>Potential themes to explore:</em><br>
+                    - The psychological toll of perfectionism (Steare et al. study shows 92% correlation between academic pressure and anxiety)<br>
+                    - How performance-based worth shapes identity (as described by Sakamoto in TEDx talk)<br>
+                    - The relationship between academic stress and suicidal ideation (Okechukwu's Nigerian study r=0.17, p<.001)<br>
+                    - Social media's amplification of academic competition (McLean & Penn Medicine research)
+                </div>
+                <div class="essay-game-words" id="essay-game-words"></div>
+                <div class="essay-game-feedback" id="essay-game-feedback"></div>
+                <button class="essay-game-submit" id="essay-game-submit">Submit Essay</button>
+            </div>
+
+            <div class="number-game-container" id="number-game-container">
+                <div class="number-game-header">Before You Go...</div>
+                <div class="number-game-instructions">Click the numbers in order from 1 to 20 before time runs out!</div>
+                <div class="number-game-area" id="number-game-area"></div>
+                <div class="number-game-timer" id="number-game-timer">Time: 60</div>
+                <button class="number-game-continue" id="number-game-continue">Go Downstairs</button>
+            </div>     
+            <div class="timer-container" id="timer-container">
+                Time: <span id="timer-value">0</span>
+            </div>
+            
+            <div class="phone-container" id="phone-container">
+                <div class="phone-header">Messages</div>
+                <div class="phone-content" id="phone-content"></div>
+                <button class="phone-close-button" id="phone-close-button">Close</button>
+            </div>
+            
+            <div class="dialogue-container" id="dialogue-container" style="display: none;">
+                <div id="dialogue-text"></div>
+                <div class="dialogue-options" id="dialogue-options"></div>
+            </div>
+            
+            <div class="shadow-follower" id="shadow-follower"></div>
+            
+            <div class="question-container" id="question-container">
+                <div id="question-text"></div>
+                <div class="answer-options" id="answer-options"></div>
+                <div class="countdown" id="countdown"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
